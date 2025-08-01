@@ -2,6 +2,7 @@ const express = require('express');
 const User = require('../models/user');
 
 const create_user = (req, res) => {
+    res.send('Hehe');
     let user = new User(req.body);
     user.save()
     .then((user) => {
